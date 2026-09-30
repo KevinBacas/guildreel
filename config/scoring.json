@@ -1,0 +1,8 @@
+{
+  "description": "Add, remove, or reweight terms to change the combined score.",
+  "terms": [
+    { "field": "viewCount", "transform": "log10_plus_one", "weight": 50 },
+    { "field": "likeCount", "transform": "log10_plus_one", "weight": 20 },
+    { "field": "discordReactions", "transform": "linear", "weight": 10 }
+  ]
+}
